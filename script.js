@@ -1,26 +1,27 @@
-//botões de acessibilidade 
-document.addEventListener ("DOMContentLoaded, () =>{
-    
-const btnContrast = document.getElementById("btn-constraste");
-const btnAumentar = document.getElementById("btn-aummentar-texto");
-const btnDimunuir = document.getElementById("btn-dimunuir-texto");
+//Botões de acessibilidade
+document.addEventListener("DOMContentLoaded, () => {
 
-//aumentar a fonte
+const btnContraste = document.getElementById("btn-contraste");
+const btnAumentar = document.getElementById("btn-aumentar-texto");
+const btnDiminuir = document.getElementById("btn-diminuir-texto");
+
+//aumenta a fonte
 
 let tamanhoAtualFonte = 100;
 
-//função alto constraste
+//função alto contraste
 
-btnContrast.addEventListener("click",()=>{
-    
- document.body.classList.toogle("alto-constraste");
- 
- //acessibilidade para leitores de tela
+btnContraste.addEventListener("click", () =>{
 
- const ativo = document.body.classList.contains("alto-contraste");
- btnContrast.setAttibute("aria-pressed",ativo);
-)
+document.body.classList.toogle("alto-contraste");
 
+//acessibilidade para leitores de tela
 
+const ativo = document.body.classList.contains("alto-contraste");
+btnContraste.setAttribute("aria-pressed", ativo);
 
-}")
+)};
+
+//função aumentar o texto 
+btnAumentar.addEventListener("click")
+
