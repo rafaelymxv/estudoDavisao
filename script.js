@@ -23,5 +23,23 @@ btnContraste.setAttribute("aria-pressed", ativo);
 )};
 
 //função aumentar o texto 
-btnAumentar.addEventListener("click")
+
+btnAumentar.addEventListener("click", ()=>{
+    if (tamanhoAtualFonte < 150){
+        tamanhoAtualFonte += 10;
+        document.documentElement.style..fontSize = `${tamanhoAtualFonte}%`;
+
+    }
+});
+
+//função dimunir texto;
+
+btnDiminuir.addEventListener("click", ()=> {
+    if(tamanhoAtualFonte > 90){
+        tamanhoAtualFonte -= 10;
+        document.documentElement.style.fontSize = `${tamanhoAtualFonte}%`;
+
+    }
+});
+
 
